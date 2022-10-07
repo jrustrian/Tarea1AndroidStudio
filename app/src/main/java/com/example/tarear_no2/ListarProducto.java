@@ -37,14 +37,14 @@ public class ListarProducto extends AppCompatActivity {
 
 
 
-             Cursor result= sqLiteDatabase.rawQuery( query,null);
+            Cursor result= sqLiteDatabase.rawQuery( query,null);
 
 
             while ( result.moveToNext()){
 
                 listaProductos.add("\n Cod:  "+result.getString(0)+
-                                   "\n Nombre:  "+result.getString(1)+
-                                   "\n Precio:  "+result.getString(2));
+                        "\n Nombre:  "+result.getString(1)+
+                        "\n Precio:  "+result.getString(2));
             }
 
 

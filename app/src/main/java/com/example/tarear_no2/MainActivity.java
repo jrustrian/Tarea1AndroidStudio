@@ -24,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btnListar:
                 intent = new Intent(this, ListarProducto.class);
                 break;
+            case R.id.btnListarRV:
+                intent = new Intent(this, ListarProductoRV.class);
+                break;
          }
         if (intent!=null){
             startActivity(intent);
